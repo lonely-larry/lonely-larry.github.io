@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto+Slab|Roboto" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+            <a href="home.html">
+            <img class="headerLogo" src="Resources/FRRlogoCircle.png"></a>
+            <h1>Free Range Robotics - 2921</h1>
+    </header>
+    
+    <nav>
+        
+        <ul class="navBar">
+            <li class="navBut active"><a href="home.html">Home</a></li>
+            <li class="navBut"><a>About us</a></li>
+            <li class="navBut"><a href="vex.html">VEX Robotics</a></li>
+            <li class="navBut"><a href="faq.html">FAQ</a></li>
+            <li class="navBut"><a href="resources.html">Resources</a></li>         
+        </ul>
+        <!--Phone Styles-->
+        <div class="phoneNav">
+            <span class="menuBut" onclick="showMenu()">
+                <div class="line">
+                    &#9776;
+                </div>
+            </span>
+                <a href="home.html">
+                <img class="headerLogo" src="Resources/FRRlogoCircle.png"></a>
+        </div>
+        <div class="sideBar">
+            <div class="x" onclick="hideMenu()">&times;</div>
+            <ul class="sideNav">
+                <li class="sideNavBut"><a href="home.html">Home</a></li>
+                <li class="sideNavBut"><a>About us</a></li>
+                <li class="sideNavBut active"><a href="vex.html">VEX Robotics</a></li>
+                <li class="sideNavBut"><a href="faq.html">FAQ</a></li>
+                <li class="sideNavBut"><a href="resources.html">Resources</a></li>         
+            </ul>
+        </div>
+        
+    </nav>
+    <article>
+        
+        <div class="title">
+            <h2>Homeschool VEX Robotics Team</h2>
+        </div>
+        
+            <div class="slideshow">
+                <img class="slides" src="Resources/album/download%20(1).jpg" >
+                <img class="slides" src="Resources/album/download%20(2).jpg" >
+                <img class="slides" src="Resources/album/download%20(3).jpg">
+                <img class="slides" src="Resources/album/download.jpg">
+                <div class="arrowDiv">
+                    <div class="leftArrow arrow" onclick="nextSlide(-1)">&#10094;</div>
+                    <div class="rightArrow arrow" onclick="nextSlide(1)">&#10095;</div>
+                </div>
+                <div class="controls" >
+                    <span class="dots white" onclick="activeSlide(0)"></span>
+                    <span class="dots white" onclick="activeSlide(1)"></span>
+                    <span class="dots white" onclick="activeSlide(2)"></span>
+                    <span class="dots white" onclick="activeSlide(3)"></span>
+                    <!--TODO - fix dots showing under image-->
+                </div>
+            </div>
+        
+        <div class="clubDescription edr">
+                <h3>About our team</h3>
+                <p>Club description text</p>
+        </div>
+        
+        <div class="news">
+            <h3>News</h3>
+            <h4>2017-2018 VEX challenge</h4>
+            <p>test test test</p>
+        </div>
+    </article>
+    
+    <footer>
+        <script src="slideshow.js"></script>  
+        <script src="Center.js"></script>
+        <script src="hover.js"></script>
+        <script src="sideMenu.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </footer>
+</body>
