@@ -75,17 +75,6 @@ p{
         position: relative;
         z-index: 10;
     }
-
-@media screen and (min-width: 500px) {
-    li.line{
-        display: none;
-    }
-    ul.phoneNav{
-        display: none;
-    }
-    .gap{
-        display: none;
-    }
     li.navBut{
         float: left;
         font-size: 1.6vw;
@@ -97,31 +86,28 @@ p{
         position: relative;
         padding: 1.7vw 2.1vw;
         display: inline-block;
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-         user-select: none; /* Non-prefixed version, currently
-                                      supported by Chrome and Opera */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+         user-select: none;
     }
-    li.navBut:hover{
-        border-right: none; 
-    }
-
     ul li.active, ul li.active a{
         background-color: #D22630;
         cursor: default;
         pointer-events: none;
     }
-    .sideBar{
-        display: none;
-    }
-    .phoneNav{
+
+@media screen and (min-width: 500px) {
+    li.line, ul.phoneNav, .gap, .sideBar, .phoneNav{
         display: none;
     }
 }
 @media screen and (max-width: 499px) {
+    .controls{
+        top: 34vw !important;
+    }
     article{
         position: relative;
         top: 10vw;
@@ -226,14 +212,14 @@ header h1{
     color: #2476C9;
     background-color: #2476C9;
     border: 0.5vw solid;
-    margin: 0;
+    margin: 0 0.15vw;
     top: 22.25vw;
 }
 .dots{
     margin: 0 0.4vw;
     position: relative;
     display: inline-block;
-    height: 1.5vw;;
+    height: 1.5vw;
     top: 22vw;
     color: transparent;
     background-color: #fff;
@@ -249,7 +235,7 @@ header h1{
     bottom: 0;
     transform:translate(-50%,0%);
     -ms-transform:translate(-50%,0%);
-    top: 24vw;
+    top: 38vw;
 }
 .slideshow{
     position: relative;
@@ -265,8 +251,9 @@ div.arrowDiv{
     z-index: 4;
     width: 100%;
     position: absolute;
-    top: 24vw;
+    top: 30vw;
 }
+
 .arrow{
     font-size: 4vw;
     padding: 1.5vw;
@@ -421,9 +408,14 @@ div.questDiv{
     margin-left: 5%;
 }
 span.normal{
-    position: relative;
+    position: absolute;
     top: 2vw;
+    left: 6vw;
     font-size: 2vw;
+}
+.answer span.normal{
+    top: 1vw;
+    padding-right: 1vw;
 }
 li.quest{
     cursor: pointer;
@@ -524,14 +516,34 @@ li.pdf h4{
     }
     li.pdf{
         cursor: pointer;
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-         user-select: none; /* Non-prefixed version, currently
-                                      supported by Chrome and Opera */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+         user-select: none; 
+    }
+    p{
+        font-size: 3vw;
+    }
+    h2{
+        padding: 2vw 0 3.5vw 0 ;
+        font-size: 5vw;
+    }
+    h3{
+        font-size: 5vw;
+        padding-top: 2vw;
+        height: 7vw;
+    }
+    .externLink h3{
+        padding: 2vw 0;
+        font-size: 3.5vw;
     }
     
-}
+    li.navBut{
+        font-size: 3vw;
+    }
+    li.navBut a{
+        padding: 1vw 2.1vw;
+    }
 }
