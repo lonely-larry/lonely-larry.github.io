@@ -93,15 +93,19 @@ p{
         -ms-user-select: none;
          user-select: none;
     }
+
+
+@media screen and (min-width: 500px) {
+    .line, ul.phoneNav, .gap, .sideBar, .phoneNav{
+        display: none;
+    }
     ul li.active, ul li.active a{
         background-color: #D22630;
         cursor: default;
         pointer-events: none;
     }
-
-@media screen and (min-width: 500px) {
-    li.line, ul.phoneNav, .gap, .sideBar, .phoneNav{
-        display: none;
+    news{
+        padding-bottom: 0;
     }
 }
 @media screen and (max-width: 499px) {
@@ -116,7 +120,16 @@ p{
         height: 10vw;
         width: 100vw;
         display: block;
-        
+    }
+    .faq{
+        padding-bottom: 1px;
+        margin-bottom: 0;
+    }
+    .documents{
+        padding-bottom: 1px;
+    }
+    footer{
+        margin-top: 10vw;
     }
     nav{
         height: 10vw;
@@ -136,12 +149,15 @@ p{
     .line{
         position: absolute;
         color: white;
-        font-size: 6vw;
         top: 2vw;
         left: 2vw;
         margin: 0;
         padding: 0;
         cursor: pointer;
+        z-index: 100;
+    }
+    svg{
+        width: 12%;
     }
     header{
         display: none;
@@ -165,6 +181,7 @@ p{
     }
     .sideBar a{
         position: relative;
+        top: 8vw;
         display: inline;
         font-size: 5vw; 
         line-height: 8vw;
@@ -174,7 +191,8 @@ p{
         color: white;
         font-size: 8vw;
         position: absolute;
-        left: 80%;
+        left: 7%;
+        top: 0.25%;
         cursor: pointer;
     }
 
@@ -282,6 +300,9 @@ div.arrowDiv{
 img.slide{
     width: 100%;
 }
+.clubDescription a{
+    color: black;
+}
 /*||||||||||||| VEX ||||||||||||||*/
 
 .vexVid{
@@ -388,11 +409,10 @@ a{
     position: relative;
     height: 6vw;
     background-color: #444444;
-    margin: 2vw 0;
     text-align: center;
     border-radius: 0.5vw;
     width: 90vw;
-    margin-left: 5%;
+    margin: 2vw 5%;
 }
 .answer a{
     color: white;
@@ -401,11 +421,10 @@ div.questDiv{
     height: 6vw;
     position: relative;
     background-color: #F7F8FA;
-    margin: 2vw 0;
     text-align: center;
     border-radius: 0.5vw;
     width: 90vw;
-    margin-left: 5%;
+    margin: 2vw 5%;
 }
 span.normal{
     position: absolute;
@@ -428,7 +447,10 @@ li.quest{
                                   supported by Chrome and Opera */
 }
 html{
-    background-color: #155A85;
+    background-color: #444;
+}
+body{
+    background-color: #155A85; 
 }
 
 /*-------------Resources--------------*/
@@ -535,15 +557,34 @@ li.pdf h4{
         padding-top: 2vw;
         height: 7vw;
     }
-    .externLink h3{
-        padding: 2vw 0;
-        font-size: 3.5vw;
+    h4{
+        font-size: 3vw;
+               
     }
-    
+    .externLink h3{
+        font-size: 3.5vw;
+        padding-top: 3vw;
+    }
+    .externLink{
+        padding-bottom: 0;
+    }
     li.navBut{
         font-size: 3vw;
     }
     li.navBut a{
         padding: 1vw 2.1vw;
     }
+}
+
+/*-------------Footer--------------*/
+
+footer{
+    background-color: #444444;
+    height: 12vw;
+}
+.icons img{
+    position: relative;
+    margin-left: 17vw;
+    top: 2vw;
+    height: 8vw;
 }

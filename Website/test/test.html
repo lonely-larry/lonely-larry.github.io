@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        html{
+            background-color: black;
+        }
+        
+        svg{
+            width: 30%;
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    
+    
+    <svg class="svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
+        
+    <defs><style>.cls-1{fill:#fff;}</style></defs>
+    <title>Artboard 1</title>
+    <rect class="topRec cls-1" y="20.5" x="45" width="340" height="50">
+        <animate 
+        attributeName="y"
+        class="cross"
+        from="20.5"
+        to="143.5" 
+        dur="1s"
+        begin="indefinite"
+        fill="freeze"/>
+        
+        <animateTransform attributeType="xml"
+        attributeName="transform"
+        class="cross"
+        type="rotate"
+        from="0 200 25"
+        to="-45 200 150"
+        dur="1s"
+        begin="indefinite"
+        fill="freeze"
+        />
+        
+        <animate 
+        attributeName="y"
+        class="menuLines"
+        from="143.5"
+        to="20.5" 
+        dur="1s"
+        begin="indefinite"
+        fill="freeze"/>
+        
+        <animateTransform attributeType="xml"
+        attributeName="transform"
+        class="menuLines"
+        type="rotate"
+        from="-45 200 150"
+        to="0 200 25"
+        dur="1s"
+        begin="indefinite"
+        fill="freeze"
+        />
+
+     </rect>
+        
+        
+        
+    <rect class="midRec cls-1" y="125" x="45" width="340" height="50">
+    
+        <animateTransform attributeType="xml"
+        attributeName="transform"
+        class="cross"
+        type="rotate"
+        from="0 200 25"
+        to="45 200 150"
+        dur="1s"
+        begin="indefinite"
+        fill="freeze"
+    /> 
+        
+         <animateTransform attributeType="xml"
+        attributeName="transform"
+        class="menuLines"
+        type="rotate"
+        from="45 200 150"
+        to="0 200 25"
+        dur="1s"
+        begin="indefinite"
+        fill="freeze"
+    />         
+     </rect>
+        
+    <rect class="botRec cls-1" y="230" x="45" width="340" height="50">
+        <animate 
+        attributeName="y"
+        class="cross"
+        from="230"
+        to="125" 
+        dur="1s"
+        begin="indefinite"
+        fill="freeze"/>
+
+        <animateTransform attributeType="xml"
+        attributeName="transform"
+        class="cross"
+        type="rotate"
+        from="0 200 25"
+        to="45 200 150"
+        dur="1s"
+        begin="indefinite"
+        fill="freeze"
+        />    
+        
+        <animate 
+        attributeName="y"
+        class="menuLines"
+        from="125"
+        to="230" 
+        dur="1s"
+        begin="indefinite"
+        fill="freeze"/>
+
+        <animateTransform attributeType="xml"
+        attributeName="transform"
+        class="menuLines"
+        type="rotate"
+        from="45 200 150"
+        to="0 200 25"
+        dur="1s"
+        begin="indefinite"
+        fill="freeze"
+        />    
+    </rect>
+    
+    </svg>
+    
+    <footer>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        
+        <script>
+            
+            var open = false;
+            
+            $( ".svg" ).click(function() {
+                if (open == false) {
+                    console.log("test");
+                    $(".cross").each(function (){
+                        this.beginElement();
+                    });
+                    open = true;
+                } else {
+                    $(".menuLines").each(function (){
+                        this.beginElement();
+                    });
+                    open = false;
+                }
+            });
+        </script>
+    </footer>
+</body>

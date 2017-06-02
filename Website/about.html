@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en" class="resources" style="overflow-y: auto;">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto|Luckiest+Guy" rel="stylesheet">
-
-    <title>Resources</title>
+    <title>About our team</title>
 </head>
-<body>
+<body style="background-color: #444;">
     <header>
             <a href="home.html">
             <img class="headerLogo" src="Resources/FRRlogocircle.png"></a>
@@ -20,10 +20,10 @@
         
         <ul class="navBar">
             <li class="navBut"><a href="home.html">Home</a></li>
-            <li class="navBut"><a href="about.html">About us</a></li>
+            <li class="navBut active"><a href="about.html">About us</a></li>
             <li class="navBut"><a href="vex.html">VEX Robotics</a></li>
             <li class="navBut"><a href="faq.html">FAQ</a></li>
-            <li class="navBut active"><a href="resources.html">Resources</a></li>         
+            <li class="navBut"><a href="resources.html">Resources</a></li>         
         </ul>
         <!--Phone Styles-->
         <div class="phoneNav">
@@ -161,23 +161,19 @@
         </div>
         
     </nav>
-    <article class="resources">
-        <div class="title">
-            <h2>Resources</h2>
-        </div>
-        <div>   
-            <div class="guide">
-                <h3>VEX Guides</h3>
-                <p>These VEX Robotics guides were written by previous team member and current team mentor George Gillard.<br>See more at <a class="inline" href="http://georgegillard.com/" target="_blank">georgegillard.com</a></p>
+    <article>
+            <div class="title">
+                <h2>About Us</h2>
             </div>
-            <ul class="documents">
-                <li class="pdf left"><div class="box"><h4>The Beginners Guide to ROBOTC Volume 1</h4></div><div class="doc"><iframe src="https://drive.google.com/file/d/0B6jb86-JOzA3cklJNzlzU096TU0/preview"></iframe></div></li>
-                <li class="pdf right"><div class="box"><h4>The Beginners Guide to ROBOTC Volume 2</h4></div><div class="doc"><iframe src="https://drive.google.com/file/d/0B6jb86-JOzA3WEg5MVRhWFpnTzQ/preview"></iframe></div></li>
-                <li class="pdf left"><div class="box"><h4 class="single">Gears and Sprockets for Basic Robotics</h4></div><div class="doc"><iframe src="https://drive.google.com/file/d/0B6jb86-JOzA3VFFMMGlYR1BXT3c/preview"></iframe></div></li>
-                <li class="pdf right"><div class="box"><h4>An introduction and tutorial for PID controllers</h4></div><div class="doc"><iframe src="https://drive.google.com/file/d/0B6jb86-JOzA3VXJnOUNaSzkyUU0/preview"></iframe></div></li>
-                <li class="pdf left"><div class="box"><h4>Programming Preset Heights in ROBOTC for VEX Robotics</h4></div><div class="doc"><iframe src="https://drive.google.com/file/d/0B6jb86-JOzA3Z0FMb2RBQzNfemM/preview"></iframe></div></li>
-            </ul>
-        </div>
+            <div class="edr">
+                <p>Free Range Robotics is an Albany based home-schooled robotics team. The team was founded in 2008 and has competed ever since. The team have travelled to the worlds VEX Robotics competition multiple times. The team has won multiple awards, including the world championship in 2010.
+                <br><br>
+                The current team as of the end of the 2016-2017 season is pictured below.
+                </p>
+            </div>
+            <div class="teamPhoto">
+                <img src="Resources/20170216_172903.jpg" width="100%">
+            </div>
     </article>
     
     <footer>
@@ -186,39 +182,10 @@
             <a href="https://twitter.com/freerangerobotx" target="_blank"><img class="twitter" src="Resources/iconmonstr-twitter-3-240.png"></a>
             <a href="https://www.flickr.com/photos/112893172@N02/albums" target="_blank"><img class="flickr" src="Resources/iconmonstr-flickr-3-240.png"></a>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  
         <script src="Center.js"></script>
         <script src="hover.js"></script>
         <script src="sideMenu.js"></script>
-        <script>
-            var answer;
-            
-            $(document).ready(function (){
-                hide();
-            });
-            
-            $(window).resize(function (){
-                hide();
-            });
-            
-            function hide () {
-                        if ($(window).width() > 1020) {
-                            $("li.pdf").find("iframe").show();
-                        } 
-                
-                    $("li.pdf").off('click').on('click', function() {
-                        if ($(window).width() > 1020) {
-                            return;
-                        } else {
-                            console.log("run");
-                            answer = $(this).find("iframe");
-                            $(answer).slideToggle(250);
-                        }
-                    });
-                }
-        </script> 
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     </footer>
 </body>

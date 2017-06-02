@@ -1,6 +1,6 @@
 var delay = 8000;
 var slideNumber = 0;
-var slideCurrent = 2;
+var slideCurrent = 5;
 
 $(document).ready(function () {
     showSlides(slideNumber);

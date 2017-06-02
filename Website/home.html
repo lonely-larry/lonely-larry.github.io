@@ -20,27 +20,141 @@
         
         <ul class="navBar">
             <li class="navBut active"><a href="home.html">Home</a></li>
-            <li class="navBut"><a>About us</a></li>
+            <li class="navBut"><a href="about.html">About us</a></li>
             <li class="navBut"><a href="vex.html">VEX Robotics</a></li>
             <li class="navBut"><a href="faq.html">FAQ</a></li>
             <li class="navBut"><a href="resources.html">Resources</a></li>         
         </ul>
         <!--Phone Styles-->
         <div class="phoneNav">
-            <span class="menuBut" onclick="showMenu()">
+            <span class="menuBut">
                 <div class="line">
-                    &#9776;
+                    <svg class="svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
+
+                    <defs><style>.cls-1{fill:#fff;}</style></defs>
+                    <rect class="topRec cls-1" y="20.5" x="45" width="340" height="50">
+                        <animate 
+                        attributeName="y"
+                        class="cross"
+                        from="20.5"
+                        to="143.5" 
+                        dur="0.5s"
+                        begin="indefinite"
+                        fill="freeze"/>
+
+                        <animateTransform attributeType="xml"
+                        attributeName="transform"
+                        class="cross"
+                        type="rotate"
+                        from="0 200 25"
+                        to="-45 200 150"
+                        dur="0.5s"
+                        begin="indefinite"
+                        fill="freeze"
+                        />
+
+                        <animate 
+                        attributeName="y"
+                        class="menuLines"
+                        from="143.5"
+                        to="20.5" 
+                        dur="0.5s"
+                        begin="indefinite"
+                        fill="freeze"/>
+
+                        <animateTransform attributeType="xml"
+                        attributeName="transform"
+                        class="menuLines"
+                        type="rotate"
+                        from="-45 200 150"
+                        to="0 200 25"
+                        dur="0.5s"
+                        begin="indefinite"
+                        fill="freeze"
+                        />
+
+                     </rect>
+
+
+
+                    <rect class="midRec cls-1" y="125" x="45" width="340" height="50">
+
+                        <animateTransform attributeType="xml"
+                        attributeName="transform"
+                        class="cross"
+                        type="rotate"
+                        from="0 200 25"
+                        to="45 200 150"
+                        dur="0.5s"
+                        begin="indefinite"
+                        fill="freeze"
+                    /> 
+
+                         <animateTransform attributeType="xml"
+                        attributeName="transform"
+                        class="menuLines"
+                        type="rotate"
+                        from="45 200 150"
+                        to="0 200 25"
+                        dur="0.5s"
+                        begin="indefinite"
+                        fill="freeze"
+                    />         
+                     </rect>
+
+                    <rect class="botRec cls-1" y="230" x="45" width="340" height="50">
+                        <animate 
+                        attributeName="y"
+                        class="cross"
+                        from="230"
+                        to="125" 
+                        dur="0.5s"
+                        begin="indefinite"
+                        fill="freeze"/>
+
+                        <animateTransform attributeType="xml"
+                        attributeName="transform"
+                        class="cross"
+                        type="rotate"
+                        from="0 200 25"
+                        to="45 200 150"
+                        dur="0.5s"
+                        begin="indefinite"
+                        fill="freeze"
+                        />    
+
+                        <animate 
+                        attributeName="y"
+                        class="menuLines"
+                        from="125"
+                        to="230" 
+                        dur="0.5s"
+                        begin="indefinite"
+                        fill="freeze"/>
+
+                        <animateTransform attributeType="xml"
+                        attributeName="transform"
+                        class="menuLines"
+                        type="rotate"
+                        from="45 200 150"
+                        to="0 200 25"
+                        dur="0.5s"
+                        begin="indefinite"
+                        fill="freeze"
+                        />    
+                    </rect>
+
+                    </svg>
                 </div>
             </span>
                 <a href="home.html">
                 <img class="headerLogo" src="Resources/FRRlogocircle.png"></a>
         </div>
         <div class="sideBar">
-            <div class="x" onclick="hideMenu()">&times;</div>
             <ul class="sideNav">
                 <li class="sideNavBut"><a href="home.html">Home</a></li>
-                <li class="sideNavBut"><a>About us</a></li>
-                <li class="sideNavBut active"><a href="vex.html">VEX Robotics</a></li>
+                <li class="sideNavBut"><a href="about.html">About us</a></li>
+                <li class="sideNavBut"><a href="vex.html">VEX Robotics</a></li>
                 <li class="sideNavBut"><a href="faq.html">FAQ</a></li>
                 <li class="sideNavBut"><a href="resources.html">Resources</a></li>         
             </ul>
@@ -54,9 +168,12 @@
         </div>
         
             <div class="slideshow">
-                <img class="slides" src="Resources/album/DSC02289.JPG" >
-                <img class="slides" src="Resources/album/DSC02290.JPG" >
-                <img class="slides" src="Resources/album/DSC02319.JPG">
+                <img class="slides" src="Resources/DSC02289.JPG">
+                <img class="slides" src="Resources/DSC02290.JPG">
+                <img class="slides" src="Resources/DSC02319.JPG">
+                <img class="slides" src="Resources/IMG_4491.JPG">
+                <img class="slides" src="Resources/IMG_4492.JPG">
+                <img class="slides" src="Resources/IMG_4493.JPG">
                 <div class="arrowDiv">
                     <div class="leftArrow arrow" onclick="nextSlide(-1)">&#10094;</div>
                     <div class="rightArrow arrow" onclick="nextSlide(1)">&#10095;</div>
@@ -65,23 +182,31 @@
                     <span class="dots white" onclick="activeSlide(0)"></span>
                     <span class="dots white" onclick="activeSlide(1)"></span>
                     <span class="dots white" onclick="activeSlide(2)"></span>
-                    <!--TODO - fix dots showing under image-->
+                    <span class="dots white" onclick="activeSlide(3)"></span>
+                    <span class="dots white" onclick="activeSlide(4)"></span>
+                    <span class="dots white" onclick="activeSlide(5)"></span>
                 </div>
             </div>
         
         <div class="clubDescription edr">
-                <h3>About our team</h3>
-                <p>Club description text</p>
+            <h3><a>About our team</a></h3>
+                <p>We are a group of homeschooled students in Auckland, New Zealand, who are enthusiastic about the fields of science, engineering and robotics. We believe that in working as a team we can achieve great results.</p>
         </div>
         
         <div class="news">
             <h3>News</h3>
             <h4>2017-2018 VEX challenge</h4>
-            <p>test test test</p>
+            <p>VEX Robotics Competition In the Zone is played on a 12’x12’ square field configured as seen above. Two alliances – one “red” and one “blue” – composed of two teams each, compete in matches consisting of a fifteen second autonomous period followed by one minute and forty-five seconds of driver-controlled play. <br><br>
+            The object of the game is to attain a higher score than the opposing Alliance by Stacking Cones on Goals, by Scoring Mobile Goals in Goal Zones, by having the Highest Stacks, and by Parking Robots.</p>
         </div>
     </article>
     
     <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/groups/266818290419870/" target="_blank"><img class="fBook" src="Resources/iconmonstr-facebook-3-240.png"></a>
+            <a href="https://twitter.com/freerangerobotx" target="_blank"><img class="twitter" src="Resources/iconmonstr-twitter-3-240.png"></a>
+            <a href="https://www.flickr.com/photos/112893172@N02/albums" target="_blank"><img class="flickr" src="Resources/iconmonstr-flickr-3-240.png"></a>
+        </div>
         <script src="slideshow.js"></script>  
         <script src="Center.js"></script>
         <script src="hover.js"></script>
