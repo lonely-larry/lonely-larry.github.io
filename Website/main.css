@@ -234,6 +234,9 @@ header h1{
 /*||||||||||||||||||||||||||||||||||||*/
 
 /*||||||||||||| Home ||||||||||||||*/
+.clubDescription, .news, footer{
+    display: none;
+}
 .dots.white, .dots:hover{
     color: #2476C9;
     background-color: #2476C9;
