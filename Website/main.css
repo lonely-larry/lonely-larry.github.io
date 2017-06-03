@@ -109,6 +109,9 @@ p{
     }
 }
 @media screen and (max-width: 499px) {
+    .cls-1{
+        display: block;
+    }
     .controls{
         top: 34vw !important;
     }
@@ -146,19 +149,17 @@ p{
     li.navBut{
         display: none;
     }
-    .line{
-        position: absolute;
-        color: white;
+    svg{
+        position: relative;
+        trasform-box: fill;
+        height: 6vw;
         top: 2vw;
         left: 2vw;
-        margin: 0;
-        padding: 0;
         cursor: pointer;
-        z-index: 100;
+        z-index: 1;
+        overflow: hidden;
     }
-    svg{
-        width: 12%;
-    }
+    
     header{
         display: none;
     }
@@ -175,13 +176,14 @@ p{
         position: fixed;
         width: 0;
         height: 100vh;
+        margin-top: -8vw;
         background-color: rgba(40,40,40,0.9);
         overflow-x: hidden;
         white-space: nowrap;
     }
     .sideBar a{
         position: relative;
-        top: 8vw;
+        top: 11vw;
         display: inline;
         font-size: 5vw; 
         line-height: 8vw;
@@ -190,13 +192,19 @@ p{
     .x{
         color: white;
         font-size: 8vw;
-        position: absolute;
+        position: relative;
         left: 7%;
         top: 0.25%;
         cursor: pointer;
     }
 
 
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .svg{
+        left: -44vw;
+    }
 }
 
 
@@ -588,3 +596,83 @@ footer{
     top: 2vw;
     height: 8vw;
 }
+
+/*-------------Animation--------------*/
+
+/*First animation*/
+.topRec.active{
+    animation: topRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);
+    transform-origin: 215px 45.5px;
+}
+
+@keyframes topRecForwards {
+    to {
+        transform: translateY(100px) rotate(-45deg);
+    }
+}
+.midRec.active{
+    animation: midRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94); 
+    transform-origin: 215px 150px;
+}
+
+@keyframes midRecForwards {
+    to {
+        transform: rotate(45deg);
+
+    }
+}
+.botRec.active{
+    animation: botRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);
+    transform-origin: 215px 250px;
+}
+
+@keyframes botRecForwards {
+    to {
+        transform: translateY(-100px) rotate(45deg);
+
+    }
+}
+
+
+/*second animation*/
+ .topRec.inactive{
+    animation: topRecReverse .6s forwards cubic-bezier(.54,.13,.51,.94);
+    transform-origin: 215px 45.5px;
+}
+
+@keyframes topRecReverse {
+    from{
+        transform: translateY(100px) rotate(-45deg);
+    }
+    to {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+.midRec.inactive{
+    animation: midRecReverse .6s forwards cubic-bezier(.54,.13,.51,.94); 
+    transform-origin: 215px 150px;
+}
+
+@keyframes midRecReverse {
+    from{
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(0deg);
+
+    }
+}
+.botRec.inactive{
+    animation: botRecReverse .6s forwards cubic-bezier(.54,.13,.51,.94);
+    transform-origin: 215px 250px;
+}
+
+@keyframes botRecReverse {
+    from{
+        transform: translateY(-100px) rotate(45deg);
+    }
+    to {
+        transform: translateY(0px) rotate(0deg);
+
+    }
+} 

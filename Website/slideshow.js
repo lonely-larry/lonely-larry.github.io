@@ -24,6 +24,16 @@ function interval () {
     var timer = setInterval(function(){nextSlide(1)}, delay);
 }
 
+$(".slideshow").on("swiperight", function(){
+    showSlides(slideNumber += 1);
+    console.log("right");
+});
+
+$(".slideshow").on("swipeleft", function(){
+    showSlides(slideNumber += -1);
+    console.log("left");
+});
+
 function showSlides(n) {
     
     $(".slideshow").css("pointer-events", "none");

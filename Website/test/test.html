@@ -12,129 +12,108 @@
         svg{
             width: 30%;
         }
+        
+        /*First animation*/
+.topRec.active{
+    animation: topRecForwards 0.75s forwards cubic-bezier(.9,.4,.47,.87);
+    transform-origin: 215px 45.5px;
+}
+
+@keyframes topRecForwards {
+    to {
+        transform: translateY(100px) rotate(-45deg);
+    }
+}
+.midRec.active{
+    animation: midRecForwards 0.75s forwards cubic-bezier(.9,.4,.47,.87); 
+    transform-origin: 215px 150px;
+}
+
+@keyframes midRecForwards {
+    to {
+        transform: rotate(45deg);
+
+    }
+}
+.botRec.active{
+    animation: botRecForwards 0.75s forwards cubic-bezier(.9,.4,.47,.87);
+    transform-origin: 215px 250px;
+}
+
+@keyframes botRecForwards {
+    to {
+        transform: translateY(-100px) rotate(45deg);
+
+    }
+}
+
+
+/*second animation*/
+ .topRec.inactive{
+    animation: topRecReverse .75s forwards cubic-bezier(.9,.4,.47,.87);
+    transform-origin: 215px 45.5px;
+}
+
+@keyframes topRecReverse {
+    from{
+        transform: translateY(100px) rotate(-45deg);
+    }
+    to {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+.midRec.inactive{
+    animation: midRecReverse .75s forwards cubic-bezier(.9,.4,.47,.87); 
+    transform-origin: 215px 150px;
+}
+
+@keyframes midRecReverse {
+    from{
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(0deg);
+
+    }
+}
+.botRec.inactive{
+    animation: botRecReverse .75s forwards cubic-bezier(.9,.4,.47,.87);
+    transform-origin: 215px 250px;
+}
+
+@keyframes botRecReverse {
+    from{
+        transform: translateY(-100px) rotate(45deg);
+    }
+    to {
+        transform: translateY(0px) rotate(0deg);
+
+    }
+}     
+        
+        .second{
+            margin-top: 20vw;
+        }
     </style>
     <title>Home</title>
 </head>
 <body>
     
     
-    <svg class="svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
-        
-    <defs><style>.cls-1{fill:#fff;}</style></defs>
-    <title>Artboard 1</title>
-    <rect class="topRec cls-1" y="20.5" x="45" width="340" height="50">
-        <animate 
-        attributeName="y"
-        class="cross"
-        from="20.5"
-        to="143.5" 
-        dur="1s"
-        begin="indefinite"
-        fill="freeze"/>
-        
-        <animateTransform attributeType="xml"
-        attributeName="transform"
-        class="cross"
-        type="rotate"
-        from="0 200 25"
-        to="-45 200 150"
-        dur="1s"
-        begin="indefinite"
-        fill="freeze"
-        />
-        
-        <animate 
-        attributeName="y"
-        class="menuLines"
-        from="143.5"
-        to="20.5" 
-        dur="1s"
-        begin="indefinite"
-        fill="freeze"/>
-        
-        <animateTransform attributeType="xml"
-        attributeName="transform"
-        class="menuLines"
-        type="rotate"
-        from="-45 200 150"
-        to="0 200 25"
-        dur="1s"
-        begin="indefinite"
-        fill="freeze"
-        />
+    <svg class="first" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
 
-     </rect>
-        
-        
-        
-    <rect class="midRec cls-1" y="125" x="45" width="340" height="50">
-    
-        <animateTransform attributeType="xml"
-        attributeName="transform"
-        class="cross"
-        type="rotate"
-        from="0 200 25"
-        to="45 200 150"
-        dur="1s"
-        begin="indefinite"
-        fill="freeze"
-    /> 
-        
-         <animateTransform attributeType="xml"
-        attributeName="transform"
-        class="menuLines"
-        type="rotate"
-        from="45 200 150"
-        to="0 200 25"
-        dur="1s"
-        begin="indefinite"
-        fill="freeze"
-    />         
-     </rect>
-        
-    <rect class="botRec cls-1" y="230" x="45" width="340" height="50">
-        <animate 
-        attributeName="y"
-        class="cross"
-        from="230"
-        to="125" 
-        dur="1s"
-        begin="indefinite"
-        fill="freeze"/>
+                        <defs><style>.cls-1{fill:#fff;}</style></defs>
 
-        <animateTransform attributeType="xml"
-        attributeName="transform"
-        class="cross"
-        type="rotate"
-        from="0 200 25"
-        to="45 200 150"
-        dur="1s"
-        begin="indefinite"
-        fill="freeze"
-        />    
-        
-        <animate 
-        attributeName="y"
-        class="menuLines"
-        from="125"
-        to="230" 
-        dur="1s"
-        begin="indefinite"
-        fill="freeze"/>
+                        <rect class="topRec cls-1" y="20.5" x="45" width="340" height="50"/>
 
-        <animateTransform attributeType="xml"
-        attributeName="transform"
-        class="menuLines"
-        type="rotate"
-        from="45 200 150"
-        to="0 200 25"
-        dur="1s"
-        begin="indefinite"
-        fill="freeze"
-        />    
-    </rect>
-    
+                        <rect class="midRec cls-1" y="125" x="45" width="340" height="50"/>
+
+                        <rect class="botRec cls-1" y="230" x="45" width="340" height="50"/>
+
     </svg>
+    <br>
+    
+
     
     <footer>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
@@ -144,7 +123,21 @@
             
             var open = false;
             
-            $( ".svg" ).click(function() {
+            $(".first").click(function() {
+
+                $(".topRec, .botRec, .midRec").toggleClass("active");
+                
+                if(!$(".topRec, .botRec, .midRec").hasClass("active")){
+
+                    $(".topRec, .botRec, .midRec").addClass("inactive");
+
+                }else{
+                    $(".topRec, .botRec, .midRec").removeClass("inactive");
+                }
+                
+            });
+            
+            $( ".second" ).click(function() {
                 if (open == false) {
                     console.log("test");
                     $(".cross").each(function (){
@@ -158,6 +151,31 @@
                     open = false;
                 }
             });
+            
+            /*var open = false;
+            
+            
+            $( ".svg" ).click(function() {
+                if (open == false) {
+                    $("rect").each(function(){
+                        $(this).removeClass("menu");
+                        $(this).addClass("cross");
+                    });
+                    $(".cross").each(function (){
+                        $(this).css("animation-play-state", "running");
+                    });
+                    open = true;
+                } else {
+                    $("rect").each(function(){
+                        $(this).removeClass("cross");
+                        $(this).addClass("menu");
+                    });
+                        $(".menu").each(function (){
+                            $(this).css("animation-play-state", "running");
+                        });
+                        open = false;
+                }
+            });*/
         </script>
     </footer>
 </body>
