@@ -151,7 +151,6 @@ p{
     }
     svg{
         position: relative;
-        trasform-box: fill;
         height: 6vw;
         top: 2vw;
         left: 2vw;
@@ -176,7 +175,7 @@ p{
         position: fixed;
         width: 0;
         height: 100vh;
-        margin-top: -8vw;
+        margin-top: -6.75vw;
         background-color: rgba(40,40,40,0.9);
         overflow-x: hidden;
         white-space: nowrap;
@@ -186,7 +185,8 @@ p{
         top: 11vw;
         display: inline;
         font-size: 5vw; 
-        line-height: 8vw;
+        line-height: 12vw;
+        padding: 2vw;
         margin: 2vw;
     }
     .x{
@@ -237,7 +237,7 @@ header h1{
 #home .clubDescription, #home .news, #home footer{
     display: none;
 }
-.dots.white, .dots:hover{
+.dots.blue, .dots:hover{
     color: #2476C9;
     background-color: #2476C9;
     border: 0.5vw solid;
@@ -604,34 +604,34 @@ footer{
 
 /*First animation*/
 .topRec.active{
-    animation: topRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);
-    transform-origin: 215px 45.5px;
+    animation: topRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 45.5px; /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes topRecForwards {
     to {
-        transform: translateY(100px) rotate(-45deg);
+        transform: translateY(100px) rotate(-45deg);    /*Finish the animation 100px lower and rotated -45 degrees*/
     }
 }
 .midRec.active{
-    animation: midRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94); 
-    transform-origin: 215px 150px;
+    animation: midRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 150px;  /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes midRecForwards {
     to {
-        transform: rotate(45deg);
+        transform: rotate(45deg);   /*Finish the animation rotated 45 degrees*/
 
     }
 }
 .botRec.active{
-    animation: botRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);
-    transform-origin: 215px 250px;
+    animation: botRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 250px;  /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes botRecForwards {
     to {
-        transform: translateY(-100px) rotate(45deg);
+        transform: translateY(-100px) rotate(45deg);    /*Finish the animation 100px higher and rotated 45 degrees*/
 
     }
 }
@@ -639,43 +639,43 @@ footer{
 
 /*second animation*/
  .topRec.inactive{
-    animation: topRecReverse .6s forwards cubic-bezier(.54,.13,.51,.94);
-    transform-origin: 215px 45.5px;
+    animation: topRecReverse 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 45.5px; /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes topRecReverse {
     from{
-        transform: translateY(100px) rotate(-45deg);
+        transform: translateY(100px) rotate(-45deg);    /*Start SVG in "x" formation*/
     }
     to {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);    /*Reset original SVG position*/
     }
 }
 .midRec.inactive{
-    animation: midRecReverse .6s forwards cubic-bezier(.54,.13,.51,.94); 
-    transform-origin: 215px 150px;
+    animation: midRecReverse 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/ 
+    transform-origin: 215px 150px;  /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes midRecReverse {
     from{
-        transform: rotate(45deg);
+        transform: rotate(45deg);    /*Start SVG in "x" formation*/
     }
     to {
-        transform: rotate(0deg);
+        transform: rotate(0deg);    /*Reset original SVG position*/
 
     }
 }
 .botRec.inactive{
-    animation: botRecReverse .6s forwards cubic-bezier(.54,.13,.51,.94);
-    transform-origin: 215px 250px;
+    animation: botRecReverse 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 250px;  /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes botRecReverse {
     from{
-        transform: translateY(-100px) rotate(45deg);
+        transform: translateY(-100px) rotate(45deg);    /*Start SVG in "x" formation*/
     }
     to {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);    /*Reset original SVG position*/
 
     }
 } 

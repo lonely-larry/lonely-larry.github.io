@@ -63,23 +63,23 @@
         </div>
         
             <div class="slideshow">
-                <img class="slides" src="Resources/DSC02289.JPG">
-                <img class="slides" src="Resources/DSC02290.JPG">
-                <img class="slides" src="Resources/DSC02319.JPG">
-                <img class="slides" src="Resources/IMG_4491.JPG">
-                <img class="slides" src="Resources/IMG_4492.JPG">
-                <img class="slides" src="Resources/IMG_4493.JPG">
+                <img class="slides" src="Resources/DSC02289.JPG" alt="Club Photos">
+                <img class="slides" src="Resources/DSC02290.JPG" alt="Club Photos">
+                <img class="slides" src="Resources/DSC02319.JPG" alt="Club Photos">
+                <img class="slides" src="Resources/IMG_4491.JPG" alt="Club Photos">
+                <img class="slides" src="Resources/IMG_4492.JPG" alt="Club Photos">
+                <img class="slides" src="Resources/IMG_4493.JPG" alt="Club Photos">
                 <div class="arrowDiv">
                     <div class="leftArrow arrow" onclick="nextSlide(-1)">&#10094;</div>
                     <div class="rightArrow arrow" onclick="nextSlide(1)">&#10095;</div>
                 </div>
                 <div class="controls" >
-                    <span class="dots white" onclick="activeSlide(0)"></span>
-                    <span class="dots white" onclick="activeSlide(1)"></span>
-                    <span class="dots white" onclick="activeSlide(2)"></span>
-                    <span class="dots white" onclick="activeSlide(3)"></span>
-                    <span class="dots white" onclick="activeSlide(4)"></span>
-                    <span class="dots white" onclick="activeSlide(5)"></span>
+                    <span class="dots blue" onclick="activeSlide(0)"></span>
+                    <span class="dots blue" onclick="activeSlide(1)"></span>
+                    <span class="dots blue" onclick="activeSlide(2)"></span>
+                    <span class="dots blue" onclick="activeSlide(3)"></span>
+                    <span class="dots blue" onclick="activeSlide(4)"></span>
+                    <span class="dots blue" onclick="activeSlide(5)"></span>
                 </div>
             </div>
         
@@ -159,7 +159,7 @@
                 if (slideNumber < 0) {
                     slideNumber = slides.length-1;
                 }
-
+                
                 for (var i = 0; i < slides.length; i++) {
                     if ($(slides[i]).css("z-index") == 3) {
                         slideCurrent = i;
@@ -171,21 +171,24 @@
                 $(slides[slideCurrent]).fadeOut(500,function(){
                     $(this).css('z-index',1).show();
                     $(slides[slideNumber]).css('z-index',3);
-                    $(".slideshow").css("pointer-events", "auto");
+                    $(".slideshow").css("pointer-events", "auto");                   
+                });
+                
+                $(dots).each(function(){
+                    $(this).removeClass("blue");
                 });
 
-                for (var i = 0; i < dots.length; i++) {
-                    $(dots[i]).removeClass("white");
-                }
-
-                $(dots[slideNumber]).addClass("white");
+                $(dots[slideNumber]).addClass("blue");
                 
-                if (x == 1){
-                    $(".clubDescription, .news, footer").css("display", "block");
+                
+                if (x==1) {
+                    setTimeout(function(){
+                        $(".clubDescription, .news, footer").css("display", "block");
+                    }, 300);
                 }
                 
                 x++;
-
+                
             }
         </script>
         

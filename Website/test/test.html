@@ -13,36 +13,36 @@
             width: 30%;
         }
         
-        /*First animation*/
+/*First animation*/
 .topRec.active{
-    animation: topRecForwards 0.75s forwards cubic-bezier(.9,.4,.47,.87);
-    transform-origin: 215px 45.5px;
+    animation: topRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 45.5px; /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes topRecForwards {
     to {
-        transform: translateY(100px) rotate(-45deg);
+        transform: translateY(100px) rotate(-45deg);    /*Finish the animation 100px lower and rotated -45 degrees*/
     }
 }
 .midRec.active{
-    animation: midRecForwards 0.75s forwards cubic-bezier(.9,.4,.47,.87); 
-    transform-origin: 215px 150px;
+    animation: midRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 150px;  /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes midRecForwards {
     to {
-        transform: rotate(45deg);
+        transform: rotate(45deg);   /*Finish the animation rotated 45 degrees*/
 
     }
 }
 .botRec.active{
-    animation: botRecForwards 0.75s forwards cubic-bezier(.9,.4,.47,.87);
-    transform-origin: 215px 250px;
+    animation: botRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 250px;  /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes botRecForwards {
     to {
-        transform: translateY(-100px) rotate(45deg);
+        transform: translateY(-100px) rotate(45deg);    /*Finish the animation 100px higher and rotated 45 degrees*/
 
     }
 }
@@ -50,46 +50,46 @@
 
 /*second animation*/
  .topRec.inactive{
-    animation: topRecReverse .75s forwards cubic-bezier(.9,.4,.47,.87);
-    transform-origin: 215px 45.5px;
+    animation: topRecReverse 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 45.5px; /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes topRecReverse {
     from{
-        transform: translateY(100px) rotate(-45deg);
+        transform: translateY(100px) rotate(-45deg);    /*Start SVG in "x" formation*/
     }
     to {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);    /*Reset original SVG position*/
     }
 }
 .midRec.inactive{
-    animation: midRecReverse .75s forwards cubic-bezier(.9,.4,.47,.87); 
-    transform-origin: 215px 150px;
+    animation: midRecReverse 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/ 
+    transform-origin: 215px 150px;  /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes midRecReverse {
     from{
-        transform: rotate(45deg);
+        transform: rotate(45deg);    /*Start SVG in "x" formation*/
     }
     to {
-        transform: rotate(0deg);
+        transform: rotate(0deg);    /*Reset original SVG position*/
 
     }
 }
 .botRec.inactive{
-    animation: botRecReverse .75s forwards cubic-bezier(.9,.4,.47,.87);
-    transform-origin: 215px 250px;
+    animation: botRecReverse 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 250px;  /*Set the center of rotation to the center of the rectangle*/
 }
 
 @keyframes botRecReverse {
     from{
-        transform: translateY(-100px) rotate(45deg);
+        transform: translateY(-100px) rotate(45deg);    /*Start SVG in "x" formation*/
     }
     to {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);    /*Reset original SVG position*/
 
     }
-}     
+} 
         
         .second{
             margin-top: 20vw;
@@ -100,7 +100,7 @@
 <body>
     
     
-    <svg class="first" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
+    <svg class="svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
 
                         <defs><style>.cls-1{fill:#fff;}</style></defs>
 
@@ -121,35 +121,18 @@
         
         <script>
             
-            var open = false;
-            
-            $(".first").click(function() {
+            $(".svg").click(function() {    //When the svg is clicked
 
-                $(".topRec, .botRec, .midRec").toggleClass("active");
+                $(".topRec, .botRec, .midRec").toggleClass("active");   //Add the class active if it doesn't have it, remove the class if it does.
                 
                 if(!$(".topRec, .botRec, .midRec").hasClass("active")){
 
-                    $(".topRec, .botRec, .midRec").addClass("inactive");
+                    $(".topRec, .botRec, .midRec").addClass("inactive");    //If the class active is not there add inactive
 
                 }else{
-                    $(".topRec, .botRec, .midRec").removeClass("inactive");
+                    $(".topRec, .botRec, .midRec").removeClass("inactive");     //If the class active is there remove the class inactive
                 }
                 
-            });
-            
-            $( ".second" ).click(function() {
-                if (open == false) {
-                    console.log("test");
-                    $(".cross").each(function (){
-                        this.beginElement();
-                    });
-                    open = true;
-                } else {
-                    $(".menuLines").each(function (){
-                        this.beginElement();
-                    });
-                    open = false;
-                }
             });
             
             /*var open = false;
