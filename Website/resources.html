@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en" class="resources" style="overflow-y: auto;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto|Luckiest+Guy" rel="stylesheet">
+
+    <title>Resources</title>
+</head>
+<body>
+    <header>
+            <a href="home.html">
+            <img class="headerLogo" src="Resources/FRRlogocircle.png"></a>
+            <h1>Free Range Robotics - 2921</h1>
+    </header>
+    
+    <nav>
+        
+        <ul class="navBar">
+            <li class="navBut"><a href="home.html">Home</a></li>
+            <li class="navBut"><a href="about.html">About us</a></li>
+            <li class="navBut"><a href="vex.html">VEX Robotics</a></li>
+            <li class="navBut"><a href="faq.html">FAQ</a></li>
+            <li class="navBut active"><a href="resources.html">Resources</a></li>         
+        </ul>
+        <!--Phone Styles-->
+        <div class="phoneNav">
+            <span class="menuBut">
+                <div class="line">
+                    <svg class="svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
+
+                        <defs><style>.cls-1{fill:#fff;}</style></defs>
+
+                        <rect class="topRec cls-1" y="20.5" x="45" width="340" height="50"/>
+
+                        <rect class="midRec cls-1" y="125" x="45" width="340" height="50"/>
+
+                        <rect class="botRec cls-1" y="230" x="45" width="340" height="50"/>
+
+                    </svg>
+                </div>
+            </span>
+                <a href="home.html">
+                <img class="headerLogo" src="Resources/FRRlogocircle.png"></a>
+        </div>
+        <div class="sideBar">
+            <ul class="sideNav">
+                <li class="sideNavBut"><a href="home.html">Home</a></li>
+                <li class="sideNavBut"><a href="about.html">About us</a></li>
+                <li class="sideNavBut"><a href="vex.html">VEX Robotics</a></li>
+                <li class="sideNavBut"><a href="faq.html">FAQ</a></li>
+                <li class="sideNavBut"><a href="resources.html">Resources</a></li>         
+            </ul>
+        </div>
+        
+    </nav>
+    <article class="resources">
+        <div class="title">
+            <h2>Resources</h2>
+        </div>
+        <div>   
+            <div class="guide">
+                <h3>VEX Guides</h3>
+                <p>These VEX Robotics guides were written by previous team member and current team mentor George Gillard.<br>See more at <a class="inline" href="http://georgegillard.com/" target="_blank">georgegillard.com</a></p>
+            </div>
+            <ul class="documents">
+                <li class="pdf left"><div class="box"><h4>The Beginners Guide to ROBOTC Volume 1</h4></div><div class="doc"><iframe src="https://drive.google.com/file/d/0B6jb86-JOzA3cklJNzlzU096TU0/preview"></iframe></div></li>
+                <li class="pdf right"><div class="box"><h4>The Beginners Guide to ROBOTC Volume 2</h4></div><div class="doc"><iframe src="https://drive.google.com/file/d/0B6jb86-JOzA3WEg5MVRhWFpnTzQ/preview"></iframe></div></li>
+                <li class="pdf left"><div class="box"><h4 class="single">Gears and Sprockets for Basic Robotics</h4></div><div class="doc"><iframe src="https://drive.google.com/file/d/0B6jb86-JOzA3VFFMMGlYR1BXT3c/preview"></iframe></div></li>
+                <li class="pdf right"><div class="box"><h4>An introduction and tutorial for PID controllers</h4></div><div class="doc"><iframe src="https://drive.google.com/file/d/0B6jb86-JOzA3VXJnOUNaSzkyUU0/preview"></iframe></div></li>
+                <li class="pdf left"><div class="box"><h4>Programming Preset Heights in ROBOTC for VEX Robotics</h4></div><div class="doc"><iframe src="https://drive.google.com/file/d/0B6jb86-JOzA3Z0FMb2RBQzNfemM/preview"></iframe></div></li>
+            </ul>
+        </div>
+    </article>
+    
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/groups/266818290419870/" target="_blank"><img class="fBook" src="Resources/iconmonstr-facebook-3-240.png"></a>
+            <a href="https://twitter.com/freerangerobotx" target="_blank"><img class="twitter" src="Resources/iconmonstr-twitter-3-240.png"></a>
+            <a href="https://www.flickr.com/photos/112893172@N02/albums" target="_blank"><img class="flickr" src="Resources/iconmonstr-flickr-3-240.png"></a>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
+        <script src="hover.js"></script>
+        
+        <script>
+            var pdf;
+            
+            $(document).ready(function (){
+                hide();     //Runs hide function when the document loads
+            });
+            
+            $(window).resize(function (){
+                hide();     //Runs hide function when the document is resized
+            });
+            
+            function hide () {
+                
+                    if ($(window).width() >= 1020) {
+                        $("li.pdf").find("iframe").show();  //If the screen width is over 1020 show all the hidden PDFs
+                    } else {
+                        $("li.pdf").find("iframe").hide();  //If the screen width is under (or equal to) 1020 hide all the visible PDFs
+                    }
+                
+                    $("li.pdf").off('click').on('click', function() {   
+                        if ($(window).width() < 1020) {    //If the screen width is less than 1020 
+                            pdf = $(this).find("iframe");    //Find the corresponding PDF to the title that was clicked
+                            $(pdf).slideToggle(250);     //Togles the visibility of the PDF
+                        }
+                    });
+                }
+        </script> 
+    </footer>
+</body>

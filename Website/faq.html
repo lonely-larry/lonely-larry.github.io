@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" id="faq" style="overflow-y: auto;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto|Luckiest+Guy" rel="stylesheet">
+
+    <title>FAQ</title>
+</head>
+<body>
+    <header>
+            <a href="home.html">
+            <img class="headerLogo" src="Resources/FRRlogocircle.png"></a>
+            <h1>Free Range Robotics - 2921</h1>
+    </header>
+    
+    <nav>
+        
+        <ul class="navBar">
+            <li class="navBut"><a href="home.html">Home</a></li>
+            <li class="navBut"><a href="about.html">About us</a></li>
+            <li class="navBut"><a href="vex.html">VEX Robotics</a></li>
+            <li class="navBut active"><a href="faq.html">FAQ</a></li>
+            <li class="navBut"><a href="resources.html">Resources</a></li>         
+        </ul>
+        <!--Phone Styles-->
+        <div class="phoneNav">
+            <span class="menuBut">
+                <div class="line">
+                    <svg class="svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300">
+
+                        <defs><style>.cls-1{fill:#fff;}</style></defs>
+
+                        <rect class="topRec cls-1" y="20.5" x="45" width="340" height="50"/>
+
+                        <rect class="midRec cls-1" y="125" x="45" width="340" height="50"/>
+
+                        <rect class="botRec cls-1" y="230" x="45" width="340" height="50"/>
+
+                    </svg>
+                </div>
+            </span>
+                <a href="home.html">
+                <img class="headerLogo" src="Resources/FRRlogocircle.png"></a>
+        </div>
+        <div class="sideBar">
+            <ul class="sideNav">
+                <li class="sideNavBut"><a href="home.html">Home</a></li>
+                <li class="sideNavBut"><a href="about.html">About us</a></li>
+                <li class="sideNavBut"><a href="vex.html">VEX Robotics</a></li>
+                <li class="sideNavBut"><a href="faq.html">FAQ</a></li>
+                <li class="sideNavBut"><a href="resources.html">Resources</a></li>         
+            </ul>
+        </div>
+        
+    </nav>
+    <article>
+        <div class="title">
+            <h2>FAQ</h2>
+        </div>
+        <div>
+            <ul class="faq">
+                <li class="quest"><div class="questDiv"><a class="questA"><span class="q">Q.</span><span class="normal"> How old do I need to be to join the team?</span></a></div>
+                    <div class="answer"><a class="questA"><span class="q">A.</span><span class="normal"> The minimum age is 13 years. Admission below 13 years are negotiatied on a case by case basis.</span></a></div>
+                </li>
+                <li class="quest"><div class="questDiv"><a class="questA"><span class="q">Q.</span><span class="normal"> Can I join the team if I'm not homeschooled?</span></a></div>
+                    <div class="answer"><a class="questA"><span class="q">A.</span><span class="normal"> Children who are part of a school without an active VEX Robotics team, may be eligable for membership.</span></a></div>
+                </li>
+                <li class="quest"><div class="questDiv"><a class="questA"><span class="q">Q.</span><span class="normal"> When and where does the team meet?</span></a></div>
+                    <div class="answer"><a class="questA"><span class="q">A.</span><span class="normal"> The team meets at the Massey School of Engineering and Advanced Technology in Albany. We meet on Thursday from 4-6pm.</span></a></div>
+                </li>
+                <li class="quest"><div class="questDiv"><a class="questA"><span class="q">Q.</span><span class="normal"> What is the price of membership?</span></a></div>
+                    <div class="answer"><a class="questA"><span class="q">A.</span><span class="normal"> The club offers a 3 month trial period, after this the annual subscription is $100. For familes with more than 1 member the fee is $100 for the first child, then $50 for subsequent children.</span></a></div>
+                </li>
+            </ul>
+        </div>
+    </article>
+    
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/groups/266818290419870/" target="_blank"><img class="fBook" src="Resources/iconmonstr-facebook-3-240.png"></a>
+            <a href="https://twitter.com/freerangerobotx" target="_blank"><img class="twitter" src="Resources/iconmonstr-twitter-3-240.png"></a>
+            <a href="https://www.flickr.com/photos/112893172@N02/albums" target="_blank"><img class="flickr" src="Resources/iconmonstr-flickr-3-240.png"></a>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script>
+            
+            var answer;
+
+            $(".quest").click(function () { //When a question is clicked
+
+                answer = $(this).find(".answer");   //Find the answer inside the .quest div that was clicked
+                $(answer).slideToggle(250);     //Either hide or show the answer based on whether the answer is hidden or not
+
+            });
+        
+        </script>   
+        <script src="hover.js"></script>
+    </footer>
+</body>

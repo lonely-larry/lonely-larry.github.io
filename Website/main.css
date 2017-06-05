@@ -1,0 +1,704 @@
+/*||||||||||||||||||||CSS STYLE RESET||||||||||||||||||||*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+html{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+}
+
+p{
+    line-height: 1.2;
+    
+}
+
+/*|||||||||||||||||||||Nav settings||||||||||||||||||||||*/
+
+
+    ul.navBar{
+        display: block;
+        margin-left: 0.8vw;
+        top: 10vw;
+    }
+    nav{
+        height: 5vw;
+        background-color: #101D23;
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        z-index: 10;
+    }
+    li.navBut{
+        float: left;
+        font-size: 1.6vw;
+        background-color: #101D23; 
+        height: 5vw;
+        cursor: pointer;
+    }
+    li.navBut a{
+        position: relative;
+        padding: 1.7vw 2.1vw;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+         user-select: none;
+    }
+
+
+@media screen and (min-width: 500px) {
+    .line, ul.phoneNav, .gap, .sideBar, .phoneNav{
+        display: none;
+    }
+    ul li.active, ul li.active a{
+        background-color: #D22630;
+        cursor: default;
+        pointer-events: none;
+    }
+    news{
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 499px) {
+    .cls-1{
+        display: block;
+    }
+    .controls{
+        top: 34vw !important;
+    }
+    article{
+        position: relative;
+        top: 10vw;
+    }
+    .gap{
+        height: 10vw;
+        width: 100vw;
+        display: block;
+    }
+    .faq{
+        padding-bottom: 1px;
+        margin-bottom: 0;
+    }
+    .documents{
+        padding-bottom: 1px;
+    }
+    footer{
+        margin-top: 10vw;
+    }
+    nav{
+        height: 10vw;
+        position: fixed;
+        width: 100vw;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+         user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+    }
+    li.navBut{
+        display: none;
+    }
+    svg{
+        position: relative;
+        height: 6vw;
+        top: 2vw;
+        left: 2vw;
+        cursor: pointer;
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    header{
+        display: none;
+    }
+    .phoneNav .headerLogo{
+        height: 8vw;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 5vw;
+        margin: auto;
+    }
+    .sideBar{
+        position: fixed;
+        width: 0;
+        height: 100vh;
+        margin-top: -6.75vw;
+        background-color: rgba(40,40,40,0.9);
+        overflow-x: hidden;
+        white-space: nowrap;
+    }
+    .sideBar a{
+        position: relative;
+        top: 11vw;
+        display: inline;
+        font-size: 5vw; 
+        line-height: 12vw;
+        padding: 2vw;
+        margin: 2vw;
+    }
+    .x{
+        color: white;
+        font-size: 8vw;
+        position: relative;
+        left: 7%;
+        top: 0.25%;
+        cursor: pointer;
+    }
+
+
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .svg{
+        left: -44vw;
+    }
+}
+
+
+/*|||||||||||||||||||||||||||||||||||*/
+
+/*||||||||||||| Header ||||||||||||||*/
+
+header{
+    background-color: #155A85;
+    height: 10vw;
+}
+
+.headerLogo{
+    top: 0.75vw;
+    height: 8.5vw;
+    position: absolute;
+}
+
+header h1{
+    margin-left: 13.5vw;
+    position: absolute;
+    top: 2.5vw;
+    font-size: 5vw;
+    font-family: 'Luckiest Guy', serif; 
+}
+
+/*||||||||||||||||||||||||||||||||||||*/
+
+/*||||||||||||| Home ||||||||||||||*/
+.dots.blue, .dots:hover{
+    color: #2476C9;
+    background-color: #2476C9;
+    border: 0.5vw solid;
+    margin: 0 0.15vw;
+    top: 22.25vw;
+}
+.dots{
+    margin: 0 0.4vw;
+    position: relative;
+    display: inline-block;
+    height: 1.5vw;
+    top: 22vw;
+    color: transparent;
+    background-color: #fff;
+    padding: 0 0.8vw;
+    border-radius: 50%;
+    border: 0.25vw solid;
+    cursor: pointer;
+}
+.controls{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    bottom: 0;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%);
+    top: 38vw;
+}
+.slideshow{
+    position: relative;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+     user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+div.arrowDiv{
+    z-index: 4;
+    width: 100%;
+    position: absolute;
+    top: 30vw;
+}
+
+.arrow{
+    font-size: 4vw;
+    padding: 1.5vw;
+    margin: 0 2vw;
+    color: white;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+.arrow:hover{
+    background-color: rgba(50,50,50,0.5);
+}
+.rightArrow{
+    float: right;
+}
+.leftArrow{
+    float: left;
+}
+.slides{
+    width: 100%;
+    position: absolute;
+}
+
+.news{
+    color: white;
+}
+img.slide{
+    width: 100%;
+}
+.clubDescription a{
+    color: black;
+}
+.clubDescription a:hover{
+    color: #2476C9;
+}
+/*||||||||||||| VEX ||||||||||||||*/
+
+.vexVid{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding: 0 0 56.25% 0;
+    margin: 0 auto;
+    width: 100%;
+}
+.vexVid iframe, .vexVid object, .vexVid embed{
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.challenge{
+    background-color: black;
+}
+.challenge h3{
+    color: white;
+    padding-bottom: 0.5vw;
+}
+.edr{
+    background-color: #F7F8FA;
+}
+h2{
+    padding-top: 1.5vw;
+    text-align: center;
+    display: block;
+    font-size: 3.5vw;
+    font-weight: lighter;
+    height: 4.5vw;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto Slab', serif; 
+}
+article h2{
+    background-color: #444444;
+    border: 2vh solid #444444;   
+    color: white;
+}
+h3{
+    padding-top: 1.5vw;
+    text-align: center;
+    display: block;
+    font-size: 2.5vw;
+    height: 3vw;
+    font-weight: lighter;
+}
+h4{
+    padding: 1vw 0;
+    text-align: center;
+    display: block;
+    font-size: 1.75vw;
+    height: 2vw;
+    font-weight: bold;
+}
+p{
+    padding: 2vw 6vw 3vw;
+    font-family: 'Roboto', sans-serif;  
+    text-align: center;
+    font-size: 1.75vw;
+}
+.game{
+    background-color: #F7F8FA;  
+}
+a{
+    text-decoration: none;
+    color: white;    
+}
+.externLink{
+    background-color: #D22630;
+    padding-bottom: 1vw;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.externLink:hover{
+    background-color: #2476C9;
+}
+
+/*-------------FAQ--------------*/
+
+.faq a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.q{
+    font-size: 4vw;
+    font-family: 'Roboto Slab', serif; 
+    margin-left: 1vw;
+    position: absolute;
+    left: 0;
+    top: 1vw;
+    float: left;
+}
+.answer{
+    display: none;
+    position: relative;
+    height: 6vw;
+    background-color: #444444;
+    text-align: center;
+    border-radius: 0.5vw;
+    width: 90vw;
+    margin: 2vw 5%;
+}
+.answer a{
+    color: white;
+}
+div.questDiv{
+    height: 6vw;
+    position: relative;
+    background-color: #F7F8FA;
+    text-align: center;
+    border-radius: 0.5vw;
+    width: 90vw;
+    margin: 2vw 5%;
+}
+span.normal{
+    position: absolute;
+    top: 2vw;
+    left: 6vw;
+    font-size: 2vw;
+}
+.answer span.normal{
+    top: 1vw;
+    padding-right: 1vw;
+}
+li.quest{
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+     user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+html{
+    background-color: #444;
+}
+body{
+    background-color: #155A85; 
+}
+
+/*-------------Resources--------------*/
+
+.pdf iframe{
+    width: 100%;
+    position: relative;
+}
+.inline{
+    color: #2476C9;   
+}
+li.pdf{
+    background-color: #155A85;
+}
+div.guide{
+    background-color: #F7F8FA;
+}
+li.pdf h4{
+    font-size: 2vw;
+    text-align: center;
+    margin: 3vw 0;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 1020px) {
+    li.left {
+        float: left;
+        clear: both;
+        width: 40vw;
+        margin-left: 5%;
+    }
+    li.right {
+        float: right;
+        width: 40vw;
+        margin-right: 5%
+    }
+    li.left:last-child{
+        float: none;
+        margin: 0 auto;
+        padding-top: 0.1vw;
+    }
+    .pdf iframe{
+        display: inline;
+        height: 52vw;
+    }
+    h4.single{
+        padding: 1vw 0;
+    }
+    .box h4{
+        font-family: 'Roboto Slab', serif;
+        background-color: #D22630;
+        color: white;
+        margin: 0;
+        padding: 4vw 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        resize: vertical;
+        overflow: hidden;
+    }
+    .box{
+        box-shadow: 0 0 50px 6px black;
+    }
+}
+
+@media screen and (max-width: 1019px) {
+    li.pdf {
+        width: 90vw;
+        margin-left: 5%;
+    }
+    .pdf iframe{
+        display: none;
+        height: 115vw;
+    }
+    li.pdf h4{
+        font-size: 2vw;
+        padding: 2vw 0;
+    }
+    li div.box{
+        height: 6vw;
+        background-color: #F7F8FA;
+        margin: 2vw 0;
+        text-align: center;
+        border-radius: 0.5vw;
+    }
+    li.pdf{
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+         user-select: none; 
+    }
+    p{
+        font-size: 3vw;
+    }
+    h2{
+        padding: 2vw 0 3.5vw 0 ;
+        font-size: 5vw;
+    }
+    h3{
+        font-size: 5vw;
+        padding-top: 2vw;
+        height: 7vw;
+    }
+    h4{
+        font-size: 3vw;
+               
+    }
+    .externLink h3{
+        font-size: 3.5vw;
+        padding-top: 3vw;
+    }
+    .externLink{
+        padding-bottom: 0;
+    }
+    li.navBut{
+        font-size: 3vw;
+    }
+    li.navBut a{
+        padding: 1vw 2.1vw;
+    }
+}
+
+/*-------------Footer--------------*/
+
+footer{
+    background-color: #444444;
+    height: 12vw;
+}
+.icons img{
+    position: relative;
+    margin-left: 17vw;
+    top: 2vw;
+    height: 8vw;
+}
+
+.icons img:hover{
+    animation: rotation 0.5s ease-in-out;
+    transform-origin: center;
+}
+
+@keyframes rotation{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+/*-------------Animation--------------*/
+
+/*First animation*/
+.topRec.active{
+    animation: topRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 45.5px; /*Set the center of rotation to the center of the rectangle*/
+}
+
+@keyframes topRecForwards {
+    to {
+        transform: translateY(100px) rotate(-45deg);    /*Finish the animation 100px lower and rotated -45 degrees*/
+    }
+}
+.midRec.active{
+    animation: midRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 150px;  /*Set the center of rotation to the center of the rectangle*/
+}
+
+@keyframes midRecForwards {
+    to {
+        transform: rotate(45deg);   /*Finish the animation rotated 45 degrees*/
+
+    }
+}
+.botRec.active{
+    animation: botRecForwards 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 250px;  /*Set the center of rotation to the center of the rectangle*/
+}
+
+@keyframes botRecForwards {
+    to {
+        transform: translateY(-100px) rotate(45deg);    /*Finish the animation 100px higher and rotated 45 degrees*/
+
+    }
+}
+
+
+/*second animation*/
+ .topRec.inactive{
+    animation: topRecReverse 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 45.5px; /*Set the center of rotation to the center of the rectangle*/
+}
+
+@keyframes topRecReverse {
+    from{
+        transform: translateY(100px) rotate(-45deg);    /*Start SVG in "x" formation*/
+    }
+    to {
+        transform: translateY(0px) rotate(0deg);    /*Reset original SVG position*/
+    }
+}
+.midRec.inactive{
+    animation: midRecReverse 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/ 
+    transform-origin: 215px 150px;  /*Set the center of rotation to the center of the rectangle*/
+}
+
+@keyframes midRecReverse {
+    from{
+        transform: rotate(45deg);    /*Start SVG in "x" formation*/
+    }
+    to {
+        transform: rotate(0deg);    /*Reset original SVG position*/
+
+    }
+}
+.botRec.inactive{
+    animation: botRecReverse 0.6s forwards cubic-bezier(.54,.13,.51,.94);/*Play the animation with a custom Cubic Bezier over 0.6 seconds keeping the animation in the same place as when the animation finished*/
+    transform-origin: 215px 250px;  /*Set the center of rotation to the center of the rectangle*/
+}
+
+@keyframes botRecReverse {
+    from{
+        transform: translateY(-100px) rotate(45deg);    /*Start SVG in "x" formation*/
+    }
+    to {
+        transform: translateY(0px) rotate(0deg);    /*Reset original SVG position*/
+
+    }
+} 
