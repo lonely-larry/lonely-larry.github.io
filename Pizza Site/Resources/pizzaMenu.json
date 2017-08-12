@@ -1,0 +1,78 @@
+{
+    "prices": {
+        "r": 8.5,
+        "g": 13.5
+    },
+    "pizzaMenu": [
+{
+    "name" : "Beef & Onion",
+    "type" : "r",
+    "description" : "Beef & onion, tasty.",
+    "cost" : 0
+},
+{
+    "name" : "Pepperoni",
+    "type" : "r",
+    "description" : "Pepperoni, tasty.",
+    "cost" : 0   
+},
+{
+    "name" : "Italian sausage",
+    "type" : "r",
+    "description" : "Italian sausage, tasty.",
+    "cost" : 0   
+},
+{
+    "name" : "Trio of cheese",
+    "type" : "r",
+    "description" : "Trio of cheese, tasty.",
+    "cost" : 0   
+},
+{
+    "name" : "Ham & cheese",
+    "type" : "r",
+    "description" : "Ham & cheese, tasty.",
+    "cost" : 0   
+},
+{
+    "name" : "Hawaiian",
+    "type" : "r",
+    "description" : "Hawaiian, tasty.",
+    "cost" : 0   
+},
+{
+    "name" : "Chicken & apricot",
+    "type" : "r",
+    "description" : "Chicken and apricot, tasty.",
+    "cost" : 0   
+},
+{
+    "name" : "Jalapeño Sausage",
+    "type" : "g",
+    "description" : "Jalapeño sausage, tasty.",
+    "cost" : 0   
+},
+{
+    "name" : "Seafood",
+    "type" : "g",
+    "description" : "Seafood, tasty.",
+    "cost" : 0   
+},
+{
+    "name" : "Chicken supreme",
+    "type" : "g",
+    "description" : "Chicken supreme, tasty.",
+    "cost" : 0   
+},
+{
+    "name" : "Vegetarian",
+    "type" : "g",
+    "description" : "Vegetarian, tasty.",
+    "cost" : 0   
+},
+{
+    "name" : "Meatlovers",
+    "type" : "g",
+    "description" : "Meatlovers, tasty.",
+    "cost" : 0   
+}]}
