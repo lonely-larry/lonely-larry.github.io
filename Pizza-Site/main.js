@@ -249,6 +249,8 @@ function nameValidation(name) {
         return false;
     }
     
+    console.log(name);
+    
     var nameTest = /^[a-zA-Z'-]+$/;
     return nameTest.test(name);
 }
