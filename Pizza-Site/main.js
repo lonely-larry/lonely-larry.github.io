@@ -424,7 +424,7 @@ $(".popup").delegate(".confirm", "click", function() {
         
         //If there are no errors store all the order information in local storage and navigate to the order page
         
-        if (phoneValidation(phone) && emailValidation(email) && postcode.length === 4 && addressValidation(address) && lname.length > 1 && fname.length > 1) {
+        if (phoneValidation(phone) && emailValidation(email) && postcode.length === 4 && addressValidation(address) && nameValidation(fname) && nameValidation(lname)) {
             var userDetails = {
                 email: email,
                 phone: $(".pnumber").val(),
@@ -443,7 +443,7 @@ $(".popup").delegate(".confirm", "click", function() {
             window.location = 'order.html';
 
         }
-    } else if (phoneValidation(phone) && emailValidation(email) && lname.length > 1 && fname.length > 1) {
+    } else if (phoneValidation(phone) && emailValidation(email) && postcode.length === 4 && addressValidation(address) && nameValidation(fname) && nameValidation(lname)) {
         
         //If the order is for pickup and there are no errors store all the order information in local storage and navigate to the order page
         var userDetails = {
