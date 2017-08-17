@@ -241,6 +241,17 @@ function phoneValidation(phone) {
     var phoneTest = /^\d+$/;
     return phoneTest.test(phone);
 }
+
+//Check that the name is valid, return the validity of the name
+function nameValidation(name) {
+    
+    if (name.length > 15 || name.length < 2) {
+        return false;
+    }
+    
+    var nameTest = /^[a-zA-Z'-]+$/;
+    return nameTest.test(name);
+}
     
 //Check that the address is valid, return the validity of the address
 function addressValidation(address) {
@@ -384,11 +395,11 @@ $(".popup").delegate(".confirm", "click", function() {
     //Checks whether the input is valid, shows the error if it's not valid
     
     $(".pickup .error:nth-of-type(1) p").css("display",
-        fname.length < 2 ? "block" : "none"
+        !nameValidation(fname) ? "block" : "none"
     );
     
     $(".pickup .error:nth-of-type(2) p").css("display",
-        lname.length < 2 ? "block" : "none"
+        !nameValidation(lname) ? "block" : "none"
     );
     
     $(".pickup .error:nth-of-type(3) p").css("display",
