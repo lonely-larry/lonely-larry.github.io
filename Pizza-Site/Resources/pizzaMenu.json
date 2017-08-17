@@ -1,0 +1,83 @@
+{
+    "prices": {
+        "r": 8.5,
+        "g": 13.5
+    },
+    "constants": {
+        "pizzaLimit": 5,
+        "deliveryCost": 3
+    },
+    "pizzaMenu": [
+{
+    "name" : "Beef & Onion",
+    "type" : "r",
+    "description" : "Made with fresh NZ angus beef and classic Italian mozzarella cheese.",
+    "cost" : 0
+},
+{
+    "name" : "Pepperoni",
+    "type" : "r",
+    "description" : "You can't go wrong with pepperoni, our delicious recipe ensures the perfect flavour with every bite.",
+    "cost" : 0   
+},
+{
+    "name" : "Italian sausage",
+    "type" : "r",
+    "description" : "Traditional Italian sausage accented with the flavour of real, fresh herbs.",
+    "cost" : 0   
+},
+{
+    "name" : "Trio of cheese",
+    "type" : "r",
+    "description" : "This is for the cheese lovers out there, made with mozzarella, parmesan and cheddar.",
+    "cost" : 0   
+},
+{
+    "name" : "Ham & cheese",
+    "type" : "r",
+    "description" : "A simple, classic pizza. Fresh champagne ham and mozzarella cheese.",
+    "cost" : 0   
+},
+{
+    "name" : "Hawaiian",
+    "type" : "r",
+    "description" : "Pineapple on a pizza, the internet's favourite argument. Well if you lean on team pineapple, this pizza is for you.",
+    "cost" : 0   
+},
+{
+    "name" : "Chicken & Apricot",
+    "type" : "r",
+    "description" : "Enjoy our succulent free range chicken, its flavour highlighted by the sweetness of the fresh apricot sauce. Truly a masterpiece.",
+    "cost" : 0   
+},
+{
+    "name" : "Jalapeño Sausage",
+    "type" : "g",
+    "description" : "Wanting to spice up your life? Well this pizza will do that for you, it's hot (Like really hot).",
+    "cost" : 0   
+},
+{
+    "name" : "Seafood",
+    "type" : "g",
+    "description" : "For a completely unique flavour try our new seafood pizza. Made with fresh prawns.",
+    "cost" : 0   
+},
+{
+    "name" : "Chicken supreme",
+    "type" : "g",
+    "description" : "Succulent chicken breast accompanied by fresh vegetables. You may even be able to pretend it's healthy.",
+    "cost" : 0   
+},
+{
+    "name" : "Vegetarian",
+    "type" : "g",
+    "description" : "For the vegetarians, made with fresh leafy greens and full of protein.",
+    "cost" : 0   
+},
+{
+    "name" : "Meatlovers",
+    "type" : "g",
+    "description" : "For the anti-vegans out there. If you love meat, you need this pizza.",
+    "cost": 0
+   
+}]}
