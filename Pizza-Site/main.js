@@ -443,7 +443,7 @@ $(".popup").delegate(".confirm", "click", function() {
             window.location = 'order.html';
 
         }
-    } else if (phoneValidation(phone) && emailValidation(email) && postcode.length === 4 && addressValidation(address) && nameValidation(fname) && nameValidation(lname)) {
+    } else if (phoneValidation(phone) && emailValidation(email) && nameValidation(fname) && nameValidation(lname)) {
         
         //If the order is for pickup and there are no errors store all the order information in local storage and navigate to the order page
         var userDetails = {
