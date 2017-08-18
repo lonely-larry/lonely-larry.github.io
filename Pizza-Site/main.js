@@ -249,7 +249,7 @@ function nameValidation(name) {
         return false;
     }
     
-    var nameTest = /^[a-zA-Z'-]+$/;
+    var nameTest = /^[a-zA-Z'- ]+$/;
     return nameTest.test(name);
 }
     
