@@ -255,7 +255,7 @@ function nameValidation(name) {
     
 //Check that the address is valid, return the validity of the address
 function addressValidation(address) {
-    var addressTest = /^[a-zA-Z ]*[1-9]+[a-zA-Z1-9\,\. ]+$/;
+    var addressTest = /^[a-zA-Z ]*[0-9]+[a-zA-Z0-9\,\. ]+$/;
     
     if (address.length < 6) {
         return false;
