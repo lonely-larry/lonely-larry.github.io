@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 609 609" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-1569.92,-556.956)">
+        <g id="small-transparent" serif:id="small transparent" transform="matrix(1.21676,0,0,1.21676,1569.92,556.956)">
+            <rect x="0" y="0" width="500" height="500" style="fill:none;"/>
+            <g transform="matrix(1.275,0,0,1.275,-68.754,-61.6162)">
+                <g id="Layer-1" serif:id="Layer 1">
+                    <g>
+                        <g transform="matrix(2.18705,0,0,2.18705,-284.507,-290.12)">
+                            <text x="169.984px" y="329.315px" style="font-family:'Coves-Bold', 'Coves';font-weight:700;font-size:21.2px;fill:rgb(213,213,213);">T</text>
+                            <text x="186.775px" y="329.315px" style="font-family:'Coves-Bold', 'Coves';font-weight:700;font-size:21.2px;fill:rgb(213,213,213);">E <tspan x="204.583px 218.869px 224.285px " y="329.315px 329.315px 329.315px ">A M</tspan></text>
+                            <text x="256.18px" y="329.315px" style="font-family:'Coves-Bold', 'Coves';font-weight:700;font-size:21.2px;fill:rgb(213,213,213);">2 <tspan x="272.496px " y="329.315px ">4</tspan></text>
+                            <text x="289.155px" y="329.315px" style="font-family:'Roboto-Regular', 'Roboto';font-size:21.2px;fill:rgb(213,213,213);"><tspan x="289.155px " y="329.315px ">0</tspan></text>
+                            <text x="306.465px" y="329.315px" style="font-family:'Coves-Bold', 'Coves';font-weight:700;font-size:21.2px;fill:rgb(213,213,213);">P</text>
+                        </g>
+                        <g transform="matrix(4.63884,0,0,4.63884,366.907,244.901)">
+                            <path d="M0,-10.639L0,-28.536L-10.971,-28.536L-10.971,-15.282L0,-10.639ZM0,-38.16L13.165,-38.16L13.165,-10.807L6.813,-8.19L13.165,-5.489L13.165,27.521L0,27.521L0,1.603L4.042,1.603L3.811,1.518L0,-0.086L-10.971,-4.729L-10.971,27.521L-24.136,27.521L-24.136,-10.301L-24.136,-11.23L-24.136,-19.925L-24.136,-20.769L-24.136,-28.536L-24.136,-38.16L0,-38.16Z" style="fill:rgb(58,164,220);fill-rule:nonzero;"/>
+                        </g>
+                        <g transform="matrix(4.64159,0,0,4.63884,356.886,257.008)">
+                            <path d="M0,-16.423L0,-29.511L-7.137,-29.511L-7.137,-19.444L0,-16.423ZM0,26.546L0,-1.707L-7.137,-4.728L-7.155,26.678L-21.98,26.665C-21.935,3.969 -19.001,-1.006 -22.005,-40.538C-22.062,-41.296 -21.919,-42.066 -21.981,-42.85L16.999,-42.815L16.999,-12.416L14.022,-11.054L16.999,-9.648L16.999,26.546L0,26.546Z" style="fill:rgb(213,213,213);fill-rule:nonzero;"/>
+                        </g>
+                        <g transform="matrix(4.63884,0,0,4.63884,366.866,220.891)">
+                            <path d="M0,31.323L0,32.502L13.165,32.502L13.165,10.383L13.165,9.539L13.165,0.844L13.165,-0.085L13.165,-0.508L11.584,-1.179L0,31.323Z" style="fill:rgb(67,67,67);fill-rule:nonzero;"/>
+                        </g>
+                        <g transform="matrix(4.63884,0,0,4.63884,315.975,296.514)">
+                            <path d="M0,-39.857L4.471,-39.857L7.901,-49.481L0,-49.481L-13.165,-49.481L-13.165,9.624L0,-27.313L0,-39.857Z" style="fill:rgb(67,67,67);fill-rule:nonzero;"/>
+                        </g>
+                        <g transform="matrix(4.63884,0,0,4.63884,398.471,232.638)">
+                            <path d="M0,-5.741L6.352,-8.358L6.352,-26.087L6.352,-35.711L-6.813,-35.711L-9.883,-35.711L-13.313,-26.087L-6.813,-26.087L-6.813,-8.19L-17.784,-12.833L-17.784,-13.543L-30.949,23.394L-30.949,29.97L-17.784,29.97L-17.784,-2.28L-6.813,2.363L-3.002,3.967L-2.771,4.052L-6.813,4.052L-6.813,28.791L4.771,-3.712L0,-5.741Z" style="fill:rgb(41,41,41);fill-rule:nonzero;"/>
+                        </g>
+                        <g transform="matrix(4.63884,0,0,4.63884,176.152,257.553)">
+                            <path d="M0,-16.423L0,-29.511L-7.137,-29.511L-7.137,-19.444L0,-16.423ZM0,26.546L0,-1.707L-7.137,-4.728L-7.137,26.546L-24.135,26.546L-24.135,-42.969L16.999,-42.969L16.999,-12.416L14.022,-11.054L16.999,-9.648L16.999,26.546L0,26.546Z" style="fill:rgb(213,213,213);fill-rule:nonzero;"/>
+                        </g>
+                        <g transform="matrix(4.63884,0,0,4.63884,185.044,221.033)">
+                            <path d="M0,31.323L0,32.502L13.165,32.502L13.165,10.383L13.165,9.539L13.165,0.844L13.165,-0.085L13.165,-0.508L11.584,-1.179L0,31.323Z" style="fill:rgb(72,174,118);fill-rule:nonzero;"/>
+                        </g>
+                        <g transform="matrix(4.63884,0,0,4.63884,134.153,296.654)">
+                            <path d="M0,-39.857L4.471,-39.857L7.901,-49.481L0,-49.481L-13.165,-49.481L-13.165,9.624L0,-27.313L0,-39.857Z" style="fill:rgb(72,174,118);fill-rule:nonzero;"/>
+                        </g>
+                        <g transform="matrix(4.63884,0,0,4.63884,216.649,232.778)">
+                            <path d="M0,-5.741L6.352,-8.358L6.352,-26.087L6.352,-35.711L-6.813,-35.711L-9.883,-35.711L-13.313,-26.087L-6.813,-26.087L-6.813,-8.19L-17.784,-12.833L-17.784,-13.543L-30.949,23.394L-30.949,29.97L-17.784,29.97L-17.784,-2.28L-6.813,2.363L-3.002,3.967L-2.771,4.052L-6.813,4.052L-6.813,28.791L4.771,-3.712L0,-5.741Z" style="fill:rgb(42,144,81);fill-rule:nonzero;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
